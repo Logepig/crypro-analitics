@@ -23,45 +23,60 @@
     </div>
     <nav>
         <div class="crypto">
-            <div class="crypto-name">Bitcoin (BTC)</div>
-            <div class="crypto-price">$96,500</div>
+            <img src="/img/1.png.svg" class="crypta">
+            <p class="crypto_name">BTC</p>
+            <p class="crypto_price">102000$</p>
         </div>
         <div class="crypto">
-            <div class="crypto-name">Ethereum (ETH)</div>
-            <div class="crypto-price">$2,660</div>
+            <img src="/img/1027.png.svg" class="crypta">
+            <p class="crypto_name">Ethereum</p>
+            <p class="crypto_price">3000$</p>
         </div>
         <div class="crypto">
-            <div class="crypto-name">USDT</div>
-            <div class="crypto-price">$1</div>
+            <img src="/img/52.png.svg" class="crypta">
+            <p class="crypto_name">XRP</p>
+            <p class="crypto_price">3.00$</p>
         </div>
         <div class="crypto">
-            <div class="crypto-name">Solana (SOL)</div>
-            <div class="crypto-price">$201</div>
+            <img src="/img/825.png.svg" class="crypta">
+            <p class="crypto_name">Tether</p>
+            <p class="crypto_price">1$</p>
         </div>
         <div class="crypto">
-            <div class="crypto-name">BNB</div>
-            <div class="crypto-price">$626</div>
+            <img src="/img/5426.png.svg" class="crypta">
+            <p class="crypto_name">Solana</p>
+            <p class="crypto_price">230$</p>
         </div>
         <div class="crypto">
-            <div class="crypto-name">USDC</div>
-            <div class="crypto-price">$1</div>
+            <img src="/img/1839.png.svg" class="crypta">
+            <p class="crypto_name">BNB</p>
+            <p class="crypto_price">330$</p>
         </div>
         <div class="crypto">
-            <div class="crypto-name">Dogecoin (DOGE)</div>
-            <div class="crypto-price">$0.254</div>
+            <img src="/img/3408.png.svg" class="crypta">
+            <p class="crypto_name">USDC</p>
+            <p class="crypto_price">1$</p> 
         </div>
         <div class="crypto">
-            <div class="crypto-name">Cardano (ADA)</div>
-            <div class="crypto-price">$0.695</div>
+            <img src="/img/74.png.svg" class="crypta">
+            <p class="crypto_name">Dogecoin</p>
+            <p class="crypto_price">0.326$</p> 
         </div>
         <div class="crypto">
-            <div class="crypto-name">Tron (TRX)</div>
-            <div class="crypto-price">$0.065</div>
+            <img src="/img/2010.png.svg" class="crypta">
+            <p class="crypto_name">Cardano</p>
+            <p class="crypto_price">0.942$</p> 
+        </div>
+        <div class="crypto">
+            <img src="/img/1958.png.svg" class="crypta">
+            <p class="crypto_name">TRON</p>
+            <p class="crypto_price">0.254$</p> 
         </div>
     </nav>
 
     <div class="conta" id="crypto-list">
         <div class="crypto-header">
+            <div class="clear"></div>
             <div class="crypto-number">#</div>
             <div class="crypto-name">Название</div>
             <div class="crypto-price">Цена</div>
@@ -130,14 +145,13 @@
     </div>
 
     <div class="button-group">
-        <button class="button active" data-type="all">Все</button>
-        <button class="button" data-type="type1">Тип 1</button>
-        <button class="button" data-type="type2">Тип 2</button>
-        <button class="button" data-type="type3">Тип 3</button>
+        <button class="button active" data-type="all">All</button>
+        <button class="button" data-type="type1">Crypto</button>
+        <button class="button" data-type="type2">Business</button>
+        <button class="button" data-type="type3">Finance</button>
     </div>
 
     <div class="news-grid" id="newsGrid">
-        <!-- Новости будут динамически добавляться сюда -->
     </div>
 
 
@@ -148,33 +162,43 @@
         <div class="toggle-container">
             <button class="toggle-button active" id="toLogin">Log In</button>
             <button class="toggle-button" id="toRegister">Sign Up</button>
-            <button id="closeModal">×</button>
+            <button id="closeModal"><img src="/img/close.svg"></button>
         </div>
         <div id="registrationForm" style="display: none;">
             <div class="form-group">
-                <input type="email" placeholder="Почта" required>
+                <p class="grey_text">Email Address</p>
+                <input type="email" class="input_reg" required >
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Пароль" required>
+                <div class="display_flex_text">
+                    <p class="grey_text">Password</p>
+                    <p class="lgrey_text">Forgot password?</p>
+                </div>
+                <input type="password" class="input_reg" required >
             </div>
-            <button class="action-button">Зарегистрироваться</button>
+            <button class="action-button">Register</button>
             <div class="or-divider">
                 <span class="or-text">OR</span>
             </div>
-            <button class="action-button">Вход через Google</button>
+            <button class="action-button2"><span class="ttt">Continue with Google</span></button>
         </div>
         <div id="loginForm">
             <div class="form-group">
-                <input type="email" placeholder="Почта" required>
+                <p class="grey_text">Email Address</p>
+                <input type="email" class="input_reg" required>
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Пароль" required>
+                <div class="display_flex_text">
+                    <p class="grey_text">Password</p>
+                    <p class="lgrey_text">Forgot password?</p>
+                </div>
+                <input type="password" class="input_reg" required >
             </div>
-            <button class="action-button">Войти</button>
+            <button class="action-button">Log In</button>
             <div class="or-divider">
                 <span class="or-text">OR</span>
             </div>
-            <button class="action-button">Вход через Google</button>
+            <button class="action-button2"><span class="ttt">Continue with Google</span></button>
         </div>
     </div>
 </div>

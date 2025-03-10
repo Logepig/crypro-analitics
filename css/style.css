@@ -35,6 +35,7 @@
     width: 256px;
     height: 32px;
     margin-top: 15px;
+    border-radius: 8px;
     display: flex;
 }
 
@@ -80,12 +81,54 @@
             position: fixed;
             top: 100px;
             right: 20px;
-            width: 300px;
-            background-color: white;
-            border: 1px solid #ccc;
+            width: 407px;
+            height: 506px;
+            background-color: #313131;
+            border: none;
+            border-radius: 16px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
+
+    #closeModal {
+        background-color: #313131;
+        border: none;
+        margin-top: -10px;
+    }
+
+    .display_flex_text {
+        display: flex;
+        gap: 240px;
+    }
+
+    .grey_text {
+        margin-top: 30px;
+font-weight: 500;
+font-size: 12px;
+line-height: line 22.5px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #A1A7BB;
+    }
+
+    .lgrey_text {
+        margin-top: 30px;
+        font-weight: 500;
+font-size: 10px;
+line-height: line 22.5px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #A1A7BB;
+    }
+
+.input_reg {
+    width: 357px;
+height: 53px;
+border-radius: 16px;
+background-color: #292929;
+border: none;
+}
+
         .modal-header {
             padding: 10px;
             background: #f1f1f1;
@@ -99,14 +142,7 @@
         .modal-body {
             padding: 20px;
         }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
+
         .switch-button {
             cursor: pointer;
             color: blue;
@@ -115,14 +151,34 @@
             margin-bottom: 15px;
         }
         .action-button {
-            background-color: #4285F4;
+            background-color: #EDC240;
+            width: 357px;
+            height: 53px;
+            border-radius: 16px;
             color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22.5px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            margin-top: 30px;
         }
+
+        .action-button2 {
+            background-color: #515151;
+            width: 357px;
+            height: 53px;
+            border-radius: 16px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22.5px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            margin-top: 10px;
+            color: white;
+            border: none;
+        }
+
         .toggle-container {
             display: flex;
             justify-content: space-between;
@@ -136,10 +192,11 @@
             background: none;
             border: none;
             font-weight: bold;
+            color: #A1A7BB;
         }
         .active {
-            color: #4285F4;
-            border-bottom: 2px solid #4285F4;
+            color: #FFFFFF;
+            border-bottom: 2px solid #EDC240;
         }
         .or-divider {
             display: flex;
@@ -160,24 +217,24 @@
         }
 
         nav {
+            border-top: #515151;
             color: white;
             padding: 30px;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
         }
+
         .crypto {
             display: flex;
-            align-items: center; /* Выравнивание по центру */
-            margin: 0 15px;
         }
-        .crypto-name {
-            font-weight: bold;
-            margin-right: 5px; /* Отступ между названием и ценой */
+        .crypto_name {
+            margin-left: 10px;
+            font-weight: 600;
         }
-        .crypto-price {
-            font-size: 0.9em;
-            color: #61dafb; /* Цвет для цен */
+        .crypto_price {
+            font-weight: 600;
+            margin-left: 10px;
         }
 
         .conta {
@@ -187,7 +244,18 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-        .crypto-header, .crypto-row {
+
+        .clear {
+            width: 20px;
+        }
+        .crypto-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .crypto-row {
             display: flex;
             justify-content: space-between;
             padding: 15px;
@@ -201,12 +269,24 @@
             border-bottom: none;
         }
         .crypto-number, .crypto-name, .crypto-price, .crypto-change, .crypto-marketcap, .crypto-volume, .crypto-supply {
-            text-align: right;
+            text-align: left;
             width: 140px; /* Ширина для всех колонок */
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: white;
         }
         .crypto-name {
             text-align: left;
             width: 200px; /* Больше ширины для названия */
+            font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: white;
         }
         .crypto-change {
             color: #00ff00; /* Зеленый для положительных изменений */
@@ -215,9 +295,16 @@
             color: #ff0000; /* Красный для отрицательных изменений */
         }
         .change-label {
-            text-align: center;
+            text-align: left;
             width: 140px; /* Ширина для меток изменений */
+            font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: white;
         }
+
         .pagination {
             display: flex;
             justify-content: center;
@@ -233,7 +320,7 @@
             border-radius: 5px;
         }
         .page-number.active {
-            background-color: #444;
+            background-color: #EDC240;
         }
         .star-button {
             cursor: pointer;
@@ -258,44 +345,58 @@
             font-size: 16px;
             position: relative;
             margin: 0 5px;
+            color: white;
         }
-        .button.active::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -5px;
-            height: 2px;
-            background-color: #007BFF;
+        .button.active {
+            background-color: #edc2403a;
+            color: #EDC240;
         }
         .news-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
         }
         .news-item {
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            margin-left: 150px;
+            width: 377.8260803222656px;
+            height: 521.6254272460938px;            
             position: relative;
         }
         .news-item img {
-            max-width: 100%;
-            border-radius: 5px;
+            width: 377.8260803222656px;
+            height: 212.5271759033203px;
+            max-width: 377.83px;
+            border-radius: 17.17px;
+            
+
         }
         .news-title {
-            font-size: 18px;
-            margin: 10px 0 5px;
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 19.32px;
+            line-height: 30.05px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: white;
         }
         .news-text {
-            font-size: 14px;
-            margin-bottom: 10px;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 15.03px;
+            line-height: 21.79px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #BDBDBD;
         }
         .news-time {
             position: absolute;
             bottom: 10px;
             right: 10px;
-            font-size: 12px;
-            color: #888;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 12.88px;
+            line-height: 18.68px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #BDBDBD;
         }

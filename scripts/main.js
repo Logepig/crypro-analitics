@@ -134,12 +134,12 @@ function updateCryptoList() {
     updatePageNumbers();
 
     const newsData = [
-        { id: 1, type: 'type1', title: 'Новость 1 тип 1', text: 'Описание новости 1', time: '12:00', image: 'https://via.placeholder.com/150' },
-        { id: 2, type: 'type2', title: 'Новость 2 тип 2', text: 'Описание новости 2', time: '12:30', image: 'https://via.placeholder.com/150' },
-        { id: 3, type: 'type3', title: 'Новость 3 тип 3', text: 'Описание новости 3', time: '13:00', image: 'https://via.placeholder.com/150' },
-        { id: 4, type: 'type1', title: 'Новость 4 тип 1', text: 'Описание новости 4', time: '13:30', image: 'https://via.placeholder.com/150' },
-        { id: 5, type: 'type2', title: 'Новость 5 тип 2', text: 'Описание новости 5', time: '14:00', image: 'https://via.placeholder.com/150' },
-        { id: 6, type: 'type3', title: 'Новость 6 тип 3', text: 'Описание новости 6', time: '14:30', image: 'https://via.placeholder.com/150' },
+        { id: 1, type: 'type1', title: 'Новость 1 тип 1', text: 'Описание новости 1', time: '12:00', image: 'https://images.techinsider.ru/upload/img_cache/b76/b76137ebad1c1cee0359a993137c28a7_cropped_510x491.webp' },
+        { id: 2, type: 'type2', title: 'Новость 2 тип 2', text: 'Описание новости 2', time: '12:30', image: 'https://images.techinsider.ru/upload/img_cache/b76/b76137ebad1c1cee0359a993137c28a7_cropped_510x491.webp' },
+        { id: 3, type: 'type3', title: 'Новость 3 тип 3', text: 'Описание новости 3', time: '13:00', image: 'https://images.techinsider.ru/upload/img_cache/b76/b76137ebad1c1cee0359a993137c28a7_cropped_510x491.webp' },
+        { id: 4, type: 'type1', title: 'Новость 4 тип 1', text: 'Описание новости 4', time: '13:30', image: 'https://images.techinsider.ru/upload/img_cache/b76/b76137ebad1c1cee0359a993137c28a7_cropped_510x491.webp' },
+        { id: 5, type: 'type2', title: 'Новость 5 тип 2', text: 'Описание новости 5', time: '14:00', image: 'https://images.techinsider.ru/upload/img_cache/b76/b76137ebad1c1cee0359a993137c28a7_cropped_510x491.webp' },
+        { id: 6, type: 'type3', title: 'Новость 6 тип 3', text: 'Описание новости 6', time: '14:30', image: 'https://images.techinsider.ru/upload/img_cache/b76/b76137ebad1c1cee0359a993137c28a7_cropped_510x491.webp' },
     ];
 
     const buttons = document.querySelectorAll('.button');
@@ -168,6 +168,7 @@ function updateCryptoList() {
             newsItem.innerHTML = `
                 <img src="${news.image}" alt="${news.title}">
                 <div class="news-title">${news.title}</div>
+                <br>
                 <div class="news-text">${news.text}</div>
                 <div class="news-time">${news.time}</div>
             `;
